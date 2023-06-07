@@ -1,0 +1,64 @@
+#cookies screen
+cookies_btn_accepterTousCookies= '//android.widget.TextView[@text="J\'accepte"]'
+cookies_btn_accepterNecessaryCookies= '//android.widget.TextView[@text="J\'accepte les cookies nécessaires"]'
+cookies_btn_parametrerChoixCookies= '//android.widget.TextView[@text="Je paramètre mes choix"]'
+
+#welcome screen
+wlcm_btn_ignorer= 'com.applidium.vianavigo:id/action_skip'
+wlcm_btn_suivant= 'com.applidium.vianavigo:id/action_next'
+wlcm_btn_precedent= 'com.applidium.vianavigo:id/action_previous'
+wlcm_img_idfmImage ='com.applidium.vianavigo:id/image'
+wlcm_txt_title= 'com.applidium.vianavigo:id/title'
+wlcm_txt_description = 'com.applidium.vianavigo:id/description'
+wlcm_ico_pageMappingIndex = '//android.widget.LinearLayout/android.widget.LinearLayout[1]'
+
+#Location request
+popup_btn_okLocationRequest= 'android:id/button1'
+popup_btn_annulerLocationRequest= 'android:id/button2'
+popup_img_logoGPS= '//android.widget.ImageView'
+popup_txt_title='com.applidium.vianavigo:id/title'
+popup_txt_description= 'com.applidium.vianavigo:id/body'
+
+#Homepage
+hmp_btn_navBarMenu= '//*[contains(@resource-id,"small_label_view") and @text="Mon espace"]/parent::*'
+hmp_btn_navBarAchat= '//*[contains(@resource-id,"small_label_view") and @text="Achat"]/parent::*'
+hmp_btn_navBarInfoTrafic= '//*[contains(@resource-id,"small_label_view") and @text="Infos trafic"]/parent::*'
+hmp_btn_navBarHoraires= '//*[contains(@resource-id,"small_label_view") and @text="Horaires"]/parent::*'
+hmp_btn_navBarItineraires= '//*[contains(@resource-id,"large_label_view") and @text="Itinéraires"]/parent::*'
+
+
+hmp_btn_definirMaison=  '//android.widget.TextView[@text="Maison"]/following-sibling::*/child::android.widget.Button'
+hmp_btn_definirTravail= '//android.widget.TextView[@text="Travail"]/following-sibling::*/child::android.widget.Button'
+hmp_btn_voirPlanGeneral= '//android.widget.TextView[@text="Plan général"]/following-sibling::*/child::android.widget.Button'
+hmp_btn_voirPlansRegionaux= '//android.widget.TextView[@text="Plans régionaux"]/following-sibling::*/child::android.widget.Button'
+hmp_btn_voirPlansLocaux= '//android.widget.TextView[@text="Plans locaux"]/following-sibling::*/child::android.widget.Button'
+hmp_btn_personnaliserMonAcceuil= '//android.widget.TextView[@text="Personnaliser mon accueil"]'
+hmp_txt_ouAllonsNous= '//android.widget.TextView[@text="Où allons-nous ?"]'	
+hmp_txt_planDesReseaux= '//android.widget.TextView[@text="Plans des réseaux"]'
+hmp_inp_recherche= '//android.widget.TextView[@text="Rechercher un itinéraire"]'
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Recherche Itinéraires
+ri_btn_inverserDepartArrivee =   '//android.view.View[@content-desc="Inverser les champs départ et arrivée"]'
+ri_btn_filtres =   '//android.widget.ImageView[@content-desc="Paramètres"]'
+
+ri_ico_modeTransport_publique = '//android.widget.ImageView[@content-desc="Transport en commun"]'
+ri_ico_modeTransport_velo =  '//android.widget.ImageView[@content-desc="Vélo perso"]
+ri_ico_modeTransport_covoiturage = '//android.widget.ImageView[@content-desc="Covoiturage"]'
+
+ri_inp_depart =  '//*[@text="Départ"]/following-sibling::android.widget.TextView[not(contains(@text,"Maintenant"))]'
+ri_inp_arrivee =  '//*[@text="Arrivée"]/following-sibling::android.widget.TextView'
+ri_inp_heure =   '//*[@text="Départ"]/following-sibling::android.widget.TextView[contains(@text,"Maintenant")]'
+
+ri_ico_dataLoadingSpinner =  '//*[@resource-id="com.applidium.vianavigo:id/animation_view"]'

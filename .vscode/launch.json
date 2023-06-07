@@ -1,0 +1,11 @@
+{
+    "configurations": [
+    {
+        "type": "robotframework-lsp",
+        "name": "Robot Framework: Launch template",
+        "request": "launch",
+        "terminal": "integrated",
+        "args": ["-T", "-d", "Reports", "-V", "secrets.yaml"]
+    }
+]
+}

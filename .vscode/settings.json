@@ -1,0 +1,10 @@
+{
+    "emmet.variables": {
+    },
+    "robot.variables": {
+        "EXECDIR": "${workspaceFolder}",
+        "platformName": "Android",
+        "Device_location": "local"
+
+    }
+}

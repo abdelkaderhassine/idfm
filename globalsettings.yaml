@@ -1,0 +1,20 @@
+# Define where devices are hosted: Local, SauceLabs or Browserstack 
+Device_location:  local
+
+# Device details
+
+#deviceName:       iPhone_XR_free
+#platformName:     iOS
+#platformVersion:  16.6
+
+deviceName:       RZ8R100309K
+platformName:     Android
+platformVersion:  10.0
+
+language:         FR
+
+# Wait strategy
+delay:            1
+short_wait:       5
+normal_wait:      9
+long_wait:        50
