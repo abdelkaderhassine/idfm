@@ -4,7 +4,7 @@
     "robot.variables": {
         "EXECDIR": "${workspaceFolder}",
         "platformName": "Android",
-        "Device_location": "local"
-
+        "Device_location": "local",
+        "appPath" : ""
     }
 }

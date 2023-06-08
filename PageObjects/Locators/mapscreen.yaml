@@ -62,3 +62,39 @@ ri_inp_arrivee =  '//*[@text="Arrivée"]/following-sibling::android.widget.TextV
 ri_inp_heure =   '//*[@text="Départ"]/following-sibling::android.widget.TextView[contains(@text,"Maintenant")]'
 
 ri_ico_dataLoadingSpinner =  '//*[@resource-id="com.applidium.vianavigo:id/animation_view"]'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#draft common : 
+
+
+Ignorer Les Cookies
+    [Documentation]    Ignorer les cookies pour accèder à la homepage
+    Click By Text    J\'accepte    ${short_wait}    True
+    Wait Until Page Contains    IGNORER    ${short_wait}
+
+Ignorer Welcome Screen
+    [Documentation]
+    Click By Text    IGNORER
+
+Refuser Localisation
+    [Documentation]    
+    Click By Text    Annuler

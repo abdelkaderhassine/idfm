@@ -6,6 +6,7 @@ Device_location:  local
 #deviceName:       iPhone_XR_free
 #platformName:     iOS
 #platformVersion:  16.6
+fullReset:       true
 
 deviceName:       RZ8R100309K
 platformName:     Android
