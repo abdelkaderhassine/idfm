@@ -10,7 +10,7 @@ ${remote_url}               https://${Device_provider_URL}/wd/hub
 ${AllowPopupCap_iOS}        autoAcceptAlerts
 ${AllowPopupCap_Android}    autoGrantPermissions
 &{DESIRED_CAPABILITIES}
-...                         deviceName=${deviceName}
+...                         deviceName=${deviceName}Z
 ...                         platformName=${platformName}
 ...                         sessionName=Appium test
 ...                         language=${language}

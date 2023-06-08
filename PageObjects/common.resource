@@ -45,28 +45,24 @@ Start The Application
     [Documentation]     This keyword used to opening mobile application using
     ...                 the server url and mobile capabilities
     ...                 and to verifying that it correctly launched
-    #Open Application     remote_url=${remote_url}   &{DESIRED_CAPABILITIES}
     __Launch IDFM App
-    Ignorer Les Cookies
-    Ignorer Welcome Screen
-    Run Keyword And Warn On Failure    Refuser Localisation
+    IF        '${platformName}'=='iOS'
+        Click By Text    Ne pas autoriser                                #
+        Click By Text    Refuser                                         #
+    ELSE IF    '${platformName}'=='Android'
+            Click By Text    Annuler                                     #refuser la localisation
+
+    END
+    
 
 __Launch IDFM App
-    Open Application       remote_url=http://127.0.0.1:4723    platformName=Android    automationName=Uiautomator2   deviceName=RZ8R100309K    appPackage=com.applidium.vianavigo    appActivity=com.applidium.vianavigo.views.MainVianavigo
-    Click By Text    Ne pas autoriser
-    
-Ignorer Les Cookies
-    [Documentation]    Ignorer les cookies pour accèder à la homepage
-    Click By Text    J\'accepte    ${short_wait}    True
-    Wait Until Page Contains    IGNORER    ${short_wait}
-
-Ignorer Welcome Screen
-    [Documentation]
-    Click By Text    IGNORER
-
-Refuser Localisation
-    [Documentation]    
-    Click By Text    Annuler
+    Open Application    remote_url=http://127.0.0.1:4723    &{DESIRED_CAPABILITIES_${platformName}}
+    #Open Application       remote_url=http://127.0.0.1:4723    platformName=Android    automationName=Uiautomator2   deviceName=RZ8R100309K    appPackage=com.applidium.vianavigo    appActivity=com.applidium.vianavigo.views.MainVianavigo
+    IF    '${platformName}'=='Android'
+        Run Keyword And Return Status    Click By Text    Ne pas autoriser
+    END
+    Click By Text    J\'accepte    ${short_wait}    True                #Accepter tous les coockies
+    Click By Text    IGNORER                                            #Ignorer welcome screen
     
 Select Menu Option
     [Documentation]    Options are 'Itinéraires', 'Achat', 'Mon espace'
